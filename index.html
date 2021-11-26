@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <script src="https://kit.fontawesome.com/14f039e136.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Vinicius Dantas | Shortly URL</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">Shortly</h1>
+        <div class="wrapper">
+            <div class="nav">
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Resources</a>
+                <hr>
+                <a href="#">Login</a>
+                <button class="nav__sign-up-button button" href="#">Sing Up</button>
+            </div>
+        </div>
+        <i class="fas fa-bars menu" aria-label="Menu" onclick="acionaMenu()"></i>
+    </header>
+    <main class="main">
+        <div class="main__wrapper">
+            <div class="main__illustration-container">
+                <img class="illustration-working" src="./images/illustration-working.svg" alt="Woman working">
+            </div>
+            <div class="get-started">
+                <h2 class="get-started__header">More than just shorter links</h2>
+                <p class="get-started__description">Build your brand’s recognition and get detailed insights
+                    on how your links are performing.</p>
+                <button class="get-started__button button">Get Started</button>
+            </div>
+        </div>
+        <div class="half-background">
+            <form class="shorten-form">
+                <input class="shorten-form__input" type="url" placeholder="Shorten a link here..."
+                    aria-label="Shorten a link here..." required>
+                <p class="shorten-form__error">Please add a valid link</p>
+                <button class="shorten-form__button button" type="submit">Shorten It!</button>
+            </form>
+        </div>
+        <div class="dynamic-url-shortened">
+
+        </div>
+        <div class="advanced-statistics">
+            <div class="advanced-statistics_header">
+                <h3 class="advanced-statistics__title">Advanced Statistics</h3>
+                <p class="advanced-statistics__description">Track how your links are performing across the web
+                    with our
+                    advanced statistics dashboard.</p>
+            </div>
+            <div class="advanced-statistics__item-container">
+                <div class="advanced-statistics__item advanced-statistics__item--brand-recognition">
+                    <div class="advanced-statistics__imagecontainer">
+                        <img class="advanced-statistics__image" src="./images/icon-brand-recognition.svg" alt="">
+                    </div>
+                    <h4 class="advanced-statistics__header">Brand Recognition</h4>
+                    <p class="advanced-statistics__description advanced-statistics__description--brand-recognition">
+                        Boost your brand recognition with each click.
+                        Generic
+                        links
+                        don’t
+                        mean a thing. Branded links help instil confidence in your content.</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="advanced-statistics__item advanced-statistics__item--detailed-records">
+                    <div class="advanced-statistics__imagecontainer">
+                        <img class="advanced-statistics__image" src="./images/icon-detailed-records.svg" alt="">
+                    </div>
+                    <h4 class="advanced-statistics__header">Detailed Records</h4>
+                    <p class="advanced-statistics__description advanced-statistics__description--detailed-records">Gain
+                        insights into who is clicking your links.
+                        Knowing when and where people engage with your content helps inform better decisions.</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="advanced-statistics__item advanced-statistics__item--fully-customizable">
+                    <div class="advanced-statistics__imagecontainer">
+                        <img class="advanced-statistics__image" src="./images/icon-fully-customizable.svg" alt="">
+                    </div>
+                    <h4 class="advanced-statistics__header">Fully Customizable</h4>
+                    <p class="advanced-statistics__description advanced-statistics__description--fully-customizable">
+                        Improve brand awareness and content discoverability
+                        through
+                        customizable
+                        links, supercharging audience engagement.</p>
+                </div>
+            </div>
+        </div>
+        <div class="boost">
+            <p class="boost__header">Boost your links today</p>
+            <button class="get-started__button button">Get Started</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__logo logo">Shortly</p>
+        <div class="footer__container">
+            <h5 class="footer__header">Features</h5>
+            <a href="#" class="footer__link">Link Shortening</a>
+            <a href="#" class="footer__link">Branded Links</a>
+            <a href="#" class="footer__link">Analytics</a>
+        </div>
+        <div class="footer__container">
+            <h5 class="footer__header">Resources</h5>
+            <a href="#" class="footer__link">Blog</a>
+            <a href="#" class="footer__link">Developers</a>
+            <a href="#" class="footer__link">Support</a>
+        </div>
+        <div class="footer__container">
+            <h5 class="footer__header">Company</h5>
+            <a href="#" class="footer__link">About</a>
+            <a href="#" class="footer__link">Out Team</a>
+            <a href="#" class="footer__link">Careers</a>
+            <a href="#" class="footer__link">Contact</a>
+        </div>
+        <div class="footer__social-media">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-pinterest-square"></i>
+            <i class="fab fa-instagram-square"></i>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
