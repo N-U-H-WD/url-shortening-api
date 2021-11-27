@@ -3,7 +3,7 @@ let nav = document.querySelector(".nav");
 let menu = document.querySelector(".menu");
 let body = document.querySelector("body");
 let input = document.querySelector(".shorten-form__input");
-let buttton = document.querySelector(".shorten-form__button");
+let button = document.querySelector(".shorten-form__button");
 
 input.addEventListener('invalid', () => {
     var invalidMessage = input.nextElementSibling;
@@ -17,7 +17,7 @@ input.addEventListener('input', () => {
     input.style.border = "1px solid hsl(0, 0%, 75%)";
 })
 
-form.addEventListener('submit', addShortenedLink);
+button.addEventListener('submit', addShortenedLink);
 
 //Menu
 
@@ -49,16 +49,32 @@ function clearInput(){
 function addShortenedLink(){
     let mainContainer = document.querySelector(".dynamic-url-shortened")
     let container = document.createElement("div");
-    let row = document.createElement("hr");
+
+    let row = document.createElement("div");
+    row.classList.add("row");
+
     let unshortenedLinkContainer = document.createElement("p");
+    unshortenedLinkContainer.classList.add("unshortened-link");
+
+    let shortenedLinkContainer = document.createElement("p");
+    shortenedLinkContainer.classList.add("shortened-link");
+    
+    
+
     let unshortenedLinkText = document.createTextNode(document.querySelector(".shorten-form__input").value);
+    let shortenedLinkText = document.createTextNode("htpps://placeholder.com")
+        
     let copyButton = document.createElement("button");
     
     copyButton.textContent = "Copy!";
     unshortenedLinkContainer.appendChild(unshortenedLinkText);
+    shortenedLinkContainer.appendChild(shortenedLinkText);
     mainContainer.appendChild(container);
     container.appendChild(unshortenedLinkContainer);
     container.appendChild(row);
+    container.appendChild(shortenedLinkContainer);
+
+    
     container.appendChild(copyButton);
 
 
