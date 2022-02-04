@@ -233,7 +233,7 @@ hr{
 }
 .dynamic-url-shortened{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
     background-color: var(--gray-transparent);
@@ -257,6 +257,11 @@ hr{
     border: none;
     padding: 15px;
     margin: 20px;
+}
+.dynamic-url-shortened button:hover{
+    background-color:hsl(180, 96%, 69%);
+    color: white !important;
+    cursor: pointer;
 }
 .dynamic-url-shortened .unshortened-link{
     font-size: 1.2rem;
@@ -509,6 +514,9 @@ hr{
         position: absolute;
         margin-top: 85px;
         padding-top: 10px;
+    }
+    .dynamic-url-shortened{
+        padding: 15px 150px 15px 150px;
     }
     .advanced-statistics{
         display: flex;
